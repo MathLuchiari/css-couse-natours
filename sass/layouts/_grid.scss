@@ -1,0 +1,6 @@
+.row {
+    max-width: $grid-width;
+    background-color: #eee;
+    margin: 0 auto;//Centralize the element, because it sets the left and rigth margin with equal values
+    margin-bottom: $gutter-vertical;
+}   
