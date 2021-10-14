@@ -3,6 +3,7 @@
     visited: Pseudo-class applied to a link element which has been visited
 */
 .btn {
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -13,6 +14,10 @@
         transition: all .2s;
         position: relative;
         font-size: 1.6rem;
+
+        //Change to adapt to the <button> element
+        border: none;
+        cursor: pointer;
     }
     
     /*
@@ -33,7 +38,10 @@
     Pseudo-class applied to an element while it's being clicked
     */
 
-    &:active {
+    &:active,
+    &:focus {
+
+        outline: none;
         transform: translateY(-.1rem);
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);
     }
